@@ -232,7 +232,7 @@ function AboutPage() {
                                 <span class="h1 fw-bold text-white">+</span>
                             </div>
                             <div class="counter-item-icon mx-auto">                                
-								 <h4 class="text-white">Revanue</h4>
+								 <h4 class="text-white">Revenue</h4>
 								 <i class="fas fa-3x text-white">%</i>
                             </div>                          
                            
