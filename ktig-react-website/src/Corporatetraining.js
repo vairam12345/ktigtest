@@ -77,12 +77,12 @@ function Corporatetraining(){
  useEffect(() => {
     const fetchSliderData = async () => {
       try {
-        const response = await fetch("http://3.110.119.143:8081/api/images/images"); // Replace with your API endpoint
+        const response = await fetch(" http://3.109.208.126:8081/api/images/images"); // Replace with your API endpoint
         const data = await response.json();
     
         const formattedData = data.map((item) => ({
           id: item._id,
-          imageUrl: `http://3.110.119.143:8081${item.imagePath}`, // Correctly prepending the server URL
+          imageUrl: ` http://3.109.208.126:8081${item.imagePath}`, // Correctly prepending the server URL
           title: item.title,
           description: item.description,
         }));

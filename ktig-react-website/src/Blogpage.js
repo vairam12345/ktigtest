@@ -10,7 +10,7 @@ function Blogpage() {
     useEffect(() => {
       // Fetch data from the backend
       axios
-        .get("http://3.110.119.143:8081/api/blogimages/images") // Replace with your API URL
+        .get(" http://3.109.208.126:8081/api/blogimages/images") // Replace with your API URL
         .then((response) => {
           setBlogs(response.data); // Assuming response data is an array of blog objects
         })
@@ -352,7 +352,7 @@ function Blogpage() {
               <div className="blog-item">
                 <div className="blog-img">
                   <img
-                    src={`http://3.110.119.143:8081${blog.imagePath}`} // Ensure to add backend URL
+                    src={` http://3.109.208.126:8081${blog.imagePath}`} // Ensure to add backend URL
                     className="img-fluid rounded-top w-100"
                     alt={blog.title}
                   />

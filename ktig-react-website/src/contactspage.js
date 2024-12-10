@@ -32,7 +32,7 @@ function Contactspage() {
 //       console.log('Payload:', payload);
   
 //       try {
-//         const response = await fetch('http://3.110.119.143:8081/api/form/submit', {
+//         const response = await fetch(' http://3.109.208.126:8081/api/form/submit', {
 //           method: 'POST',
 //           headers: {
 //             'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const [formData, setFormData] = useState({
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://3.110.119.143:8081/Contact/submitforms', formData);
+      const response = await axios.post(' http://3.109.208.126:8081/Contact/submitforms', formData);
       console.log('Response:', response);
     } catch (error) {
       console.log('Error:', error);

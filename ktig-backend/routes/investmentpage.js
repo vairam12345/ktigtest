@@ -20,21 +20,21 @@ module.exports = router;
 
 /////post 
 
-// http://3.110.119.143:8081/api/blogimages/upload
+//  http://3.109.208.126:8081/api/blogimages/upload
 
 
 ////GET
 
-//http://3.110.119.143:8081/api/blogimages/images
+// http://3.109.208.126:8081/api/blogimages/images
 
 
 ///GET By Id
 
 
-////http://3.110.119.143:8081/api/blogimages/images
+//// http://3.109.208.126:8081/api/blogimages/images
 
 
 /////DELETE 
 
-///// //http://3.110.119.143:8081/api/blogimages/images/id
+///// // http://3.109.208.126:8081/api/blogimages/images/id
 

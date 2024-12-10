@@ -25,8 +25,8 @@ module.exports = router;
 
 /////Post, Get,Put,Delete Api
 
-////http://3.110.119.143:8081/KTNLInward/KTNL/Inwardform
+//// http://3.109.208.126:8081/KTNLInward/KTNL/Inwardform
 
 //Delete Api
 
-//http://3.110.119.143:8081/KTNLInward/KTNL/Inwardform/:id
+// http://3.109.208.126:8081/KTNLInward/KTNL/Inwardform/:id
