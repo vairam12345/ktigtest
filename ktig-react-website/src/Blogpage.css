@@ -1,0 +1,61 @@
+@keyframes slideDownUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.blog-item {
+    animation: slideDownUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Add staggered delays for each card */
+.blog-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.blog-item:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.blog-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.blog-item:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.blog-item:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+.blog-item:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+.blog-item:nth-child(7) {
+    animation-delay: 1.8s;
+}
+
+.blog-item:nth-child(8) {
+    animation-delay: 2.1s;
+}
+
+.blog-item:nth-child(9) {
+    animation-delay: 2.4s;
+}
+
+.blog-item:nth-child(10) {
+    animation-delay: 2.7s;
+}
+
+.blog-item:nth-child(11) {
+    animation-delay: 3s;
+}

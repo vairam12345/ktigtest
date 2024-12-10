@@ -1,0 +1,9 @@
+.text-left {
+    text-align: left;
+
+      /* font-weight: bold; */
+      font-family: poppins;
+      box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  

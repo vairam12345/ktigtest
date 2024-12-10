@@ -1,0 +1,16 @@
+.title {
+    position: relative;
+    font-size: xx-large; /* Ensure this matches inline style if needed */
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7c4dff; /* Change to your desired color */
+    border-radius: 50px;
+    bottom: -10px; /* Adjust spacing as needed */
+}

@@ -1,0 +1,110 @@
+.hedsize{
+
+    font-size: 1.75rem;
+    margin-left: 8rem;
+}
+
+
+.Innovate{
+
+    font-weight: normal;
+    padding: 15px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 3px;
+}
+
+
+.KTIG-CNTERT{
+
+    margin-left: 8rem;
+
+}
+
+
+
+.custom-paragraph {
+    margin-left: 7rem;
+  }
+
+  .text1{
+
+    margin-left: 2rem;
+  }
+
+
+
+  .text2{
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+  }
+
+
+  .text-white{
+    font-weight: bolds;
+  }
+  
+
+
+  .hello{
+
+    color: #99a2a8 !important; 
+  }
+
+
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .right-to-left-animation {
+    animation: slideInFromRight 1s ease-out forwards;
+  }
+  
+  
+
+
+
+  
+.custom-dropdown-background {
+  background-color: rgb(56, 56, 98) !important; /* Transparent background */
+  box-shadow: 0 4px 6px rgba(73, 10, 192, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.2); /* Outer box shadow and inner shadow */
+  border: 1px solid #007bff !important; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  display: block;
+  visibility: hidden; /* Initially hidden */
+  top: 100%;
+  transform: rotateX(-75deg); /* Initial rotation */
+  transform-origin: 0% 0%; /* Rotation origin */
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s, transform 0.5s, visibility 0s linear 0.5s; /* Smooth transition */
+}
+
+.custom-dropdown-background.show {
+  visibility: visible; /* Show dropdown when the 'show' class is added */
+  opacity: 1; /* Make it visible */
+  transform: rotateX(0deg); /* Reset rotation */
+  transition: opacity 0.5s, transform 0.5s; /* Transition for showing */
+}
+
+.custom-dropdown-background .dropdown-item {
+  color: white !important; /* White text color */
+}
+
+.custom-white-text {
+  color: white;
+  font-size: 14px;
+  margin-top: -47px;
+  margin-left: 166x;
+  font-family: 'Great Vibes', cursive;
+
+}

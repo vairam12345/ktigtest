@@ -1,0 +1,380 @@
+.textssss {
+    color: #dee8ed !important;
+  }
+
+
+  .mytext{
+
+    font-size: bold;
+  }
+
+
+
+
+/* 
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .about-item {
+    animation: slideInFromRight 1.5s ease-in-out forwards;
+  } */
+
+
+
+
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .about-item {
+    animation: slideInFromRight 1.5s ease-in-out forwards;
+  }
+  
+  .about-img {
+    animation: slideInFromLeft 1.5s ease-in-out forwards;
+  }
+  
+
+
+
+  /* GetInTouch */
+
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(50px); /* Starts from 50px below */
+      opacity: 0; /* Starts invisible */
+    }
+    100% {
+      transform: translateY(0); /* Ends in the normal position */
+      opacity: 1; /* Ends fully visible */
+    }
+  }
+  
+  .wow.fadeInUp {
+    animation: slideUp 1s ease-out; /* Apply the animation to the desired elements */
+  }
+
+
+
+
+
+
+  /* ////Testimonial Part */
+
+.counter-item {
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .animate-up {
+    transform: translateY(50px); 
+    opacity: 0;
+    animation: moveUp 1.5s ease-out forwards;
+  }
+  
+  @keyframes moveUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+/* Slider Text animation */
+
+  .text-slider {
+    position: relative;
+    height: 100px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .slider-item {
+    position: absolute;
+    opacity: 0;
+    animation: fadeAnimation 9s infinite;
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333;
+  }
+  
+  /* Delay for each text item */
+  .slider-item:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .slider-item:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .slider-item:nth-child(3) {
+    animation-delay: 6s;
+  }
+  
+  /* Keyframes for fade-in and fade-out */
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+
+
+
+
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    animation: slideRightToLeft 10s linear infinite;
+  }
+  
+  .slider-item {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust based on your design */
+    margin-right: 20px; /* Adjust spacing between items */
+  }
+  
+  @keyframes slideRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  .text-slider .slider-wrapper {
+    position: relative;
+    height: 100px; /* Adjust based on content */
+    overflow: hidden;
+  }
+  
+  .slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .slider-item.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+
+  .slider-item {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slider-item.hidden {
+    opacity: 0;
+  }
+  
+  .slider-item.visible {
+    opacity: 1;
+  }
+  
+  .text-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust as per your layout */
+    text-align: center;
+  }
+  
+  .sub-name {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* Ensure the visibility class toggles correctly */
+  .visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+
+
+
+  .slick-dots li.slick-active .dot-inner {
+    background: #52788e; /* Filled color for active dot */
+    border: none; /* Remove border for active dot */
+  }
+  
+
+
+
+
+  
+  
+
+  /* ButtonStyles.css */
+.buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #072e56;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 12px;
+  }
+
+.buttons:hover {
+  background-color: #167be7;
+}
+
+.buttons i {
+  margin-right: 8px;
+}
+
+
+.custom-dropdown-background {
+  background-color: rgb(56, 56, 98) !important; /* Transparent background */
+  box-shadow: 0 4px 6px rgba(73, 10, 192, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.2); /* Outer box shadow and inner shadow */
+  border: 1px solid #007bff !important; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  display: block;
+  visibility: hidden; /* Initially hidden */
+  top: 100%;
+  transform: rotateX(-75deg); /* Initial rotation */
+  transform-origin: 0% 0%; /* Rotation origin */
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s, transform 0.5s, visibility 0s linear 0.5s; /* Smooth transition */
+}
+
+.custom-dropdown-background.show {
+  visibility: visible; /* Show dropdown when the 'show' class is added */
+  opacity: 1; /* Make it visible */
+  transform: rotateX(0deg); /* Reset rotation */
+  transition: opacity 0.5s, transform 0.5s; /* Transition for showing */
+}
+
+.custom-dropdown-background .dropdown-item {
+  color: white !important; /* White text color */
+}
+
+.custom-white-text {
+  color: white;
+  font-size: 14px;
+  margin-top: -47px;
+  margin-left: 166x;
+  font-family: 'Great Vibes', cursive;
+
+}
+
+
+
+
+.top_head align-items-center {
+  display: block;
+  background: linear-gradient(177deg, rgb(7, 28, 64) 0%, rgba(1, 17, 35, 0.6) 81%, rgb(7, 28, 64, 0) 100%);
+  padding: 12.3rem;
+  height: 3rem;
+}
+
+
+
+
+
+
+/* Base Styles */
+.btn-container {
+  width: 25%;
+  margin-left: 24rem;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .btn-container {
+    width: 90%; /* Full width on smaller screens */
+    margin-left: auto; /* Center the button */
+    margin-right: auto; /* Center the button */
+  }
+}

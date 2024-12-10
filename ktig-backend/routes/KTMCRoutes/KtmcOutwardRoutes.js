@@ -1,0 +1,32 @@
+const express = require("express");
+const { getKtmcOutward,createKtmcOutward, updateKtmcOutward,deleteKtmcOutward } = require("../../controllers/KtmcControllers/KtmcOutwardformController");
+
+
+const router = express.Router();
+
+// Multiscale INWARD FORM Api Routess
+router.get("/Ktmc/Outwardform", getKtmcOutward);
+router.post("/Ktmc/Outwardform", createKtmcOutward);
+router.put("/Ktmc/Outwardform/:id", updateKtmcOutward);
+router.delete("/Ktmc/Outwardform/:id", deleteKtmcOutward);
+// Multiscale INWARD FORM Api Routes
+
+
+
+
+
+
+module.exports = router;
+
+
+
+
+
+
+/////Post, Get,Put,Delete Api
+
+////http://3.110.119.143:8081/KTNLInward/KTNL/Inwardform
+
+//Delete Api
+
+//http://3.110.119.143:8081/KTNLInward/KTNL/Inwardform/:id

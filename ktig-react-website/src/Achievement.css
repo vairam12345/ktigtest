@@ -1,0 +1,77 @@
+.moving-image {
+    position: relative;
+    transition: transform 0.3s ease; /* Optional: smooth transition when hover ends */
+  }
+  
+  .moving-image:hover {
+    animation: rotateClockwise 2s infinite ease-in-out;
+  }
+  
+  .moving-image.reverse:hover {
+    animation: rotateCounterClockwise 2s infinite ease-in-out;
+  }
+  
+  @keyframes rotateClockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(40deg); /* Rotate 90 degrees clockwise */
+    }
+    100% {
+      transform: rotate(0deg); /* Return to original position */
+    }
+  }
+  
+  @keyframes rotateCounterClockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-90deg); /* Rotate 90 degrees counterclockwise */
+    }
+    100% {
+      transform: rotate(0deg); /* Return to original position */
+    }
+  }
+  
+
+
+
+
+
+
+    
+.custom-dropdown-background {
+  background-color: rgb(56, 56, 98) !important; /* Transparent background */
+  box-shadow: 0 4px 6px rgba(73, 10, 192, 0.1), inset 0 0 10px rgba(0, 0, 0, 0.2); /* Outer box shadow and inner shadow */
+  border: 1px solid #007bff !important; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  display: block;
+  visibility: hidden; /* Initially hidden */
+  top: 100%;
+  transform: rotateX(-75deg); /* Initial rotation */
+  transform-origin: 0% 0%; /* Rotation origin */
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.5s, transform 0.5s, visibility 0s linear 0.5s; /* Smooth transition */
+}
+
+.custom-dropdown-background.show {
+  visibility: visible; /* Show dropdown when the 'show' class is added */
+  opacity: 1; /* Make it visible */
+  transform: rotateX(0deg); /* Reset rotation */
+  transition: opacity 0.5s, transform 0.5s; /* Transition for showing */
+}
+
+.custom-dropdown-background .dropdown-item {
+  color: white !important; /* White text color */
+}
+
+.custom-white-text {
+  color: white;
+  font-size: 14px;
+  margin-top: -47px;
+  margin-left: 166x;
+  font-family: 'Great Vibes', cursive;
+
+}
