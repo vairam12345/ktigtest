@@ -757,7 +757,7 @@ setTimeout(() => setShowAlert(false), 3000);
                           <h1 className="text-primary">
                               <img
                                 // src="assets/img/logo/ktignewremove.png"
-                                src="assets/img/logo/Tranparent-KTIG-Logo2.png"
+                                src="assets/img/logo/Newlogo.png"
 
                                  alt="KTIG"
                                  style={{ maxHeight: '100px' }}
