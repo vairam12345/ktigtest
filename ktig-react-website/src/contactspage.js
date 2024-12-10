@@ -32,7 +32,7 @@
 // //       console.log('Payload:', payload);
   
 // //       try {
-// //         const response = await fetch(' http://13.201.85.29:8081/api/form/submit', {
+// //         const response = await fetch(' http://3.111.193.110:8081/api/form/submit', {
 // //           method: 'POST',
 // //           headers: {
 // //             'Content-Type': 'application/json',
@@ -71,7 +71,7 @@
 //     e.preventDefault();
 
 //     try {
-//       const response = await axios.post(' http://13.201.85.29:8081/Contact/submitforms', formData);
+//       const response = await axios.post(' http://3.111.193.110:8081/Contact/submitforms', formData);
 //       console.log('Response:', response);
 //     } catch (error) {
 //       console.log('Error:', error);
@@ -677,7 +677,7 @@ function Contactspage() {
 //       console.log('Payload:', payload);
   
 //       try {
-//         const response = await fetch('http://13.201.85.29:8081/api/form/submit', {
+//         const response = await fetch('http://3.111.193.110:8081/api/form/submit', {
 //           method: 'POST',
 //           headers: {
 //             'Content-Type': 'application/json',
@@ -728,7 +728,7 @@ setTimeout(() => setShowAlert(false), 3000);
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://13.201.85.29:8081/Contact/submitforms', formData);
+      const response = await axios.post('http://3.111.193.110:8081/Contact/submitforms', formData);
       console.log('Response:', response);
     } catch (error) {
       console.log('Error:', error);
