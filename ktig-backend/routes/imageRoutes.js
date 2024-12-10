@@ -18,18 +18,18 @@ module.exports = router;
 
 
 //////post APi fro image
-//  http://3.109.208.126:8081/api/images/upload
+//  http://13.201.85.29:8081/api/images/upload
 
 
 ///////Get ALL api
 
-//  http://3.109.208.126:8081/api/images/images
+//  http://13.201.85.29:8081/api/images/images
 
 
 
 ///////Get By Id Api
-//  http://3.109.208.126:8081/api/images/image/67455db93fa89e3a6ad68486
+//  http://13.201.85.29:8081/api/images/image/67455db93fa89e3a6ad68486
 
 
 ////////Delete Api
-//  http://3.109.208.126:8081/api/images/images/67455db93fa89e3a6ad68486
+//  http://13.201.85.29:8081/api/images/images/67455db93fa89e3a6ad68486

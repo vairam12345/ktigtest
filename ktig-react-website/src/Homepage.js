@@ -914,7 +914,7 @@ function Mainpage() {
         console.log('Payload:', payload);
     
         try {
-          const response = await fetch(' http://3.109.208.126:8081/api/form/submit', {
+          const response = await fetch(' http://13.201.85.29:8081/api/form/submit', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -941,7 +941,7 @@ const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // Fetch data from the backend
     axios
-      .get(" http://3.109.208.126:8081/api/blogimages/images") // Replace with your API URL
+      .get(" http://13.201.85.29:8081/api/blogimages/images") // Replace with your API URL
       .then((response) => {
         setBlogs(response.data); // Assuming response.data is an array of blog objects
       })
@@ -1027,7 +1027,7 @@ const handleSubmits = async (e) => {
 setShowAlert(true);
 setTimeout(()=> setShowAlert(false),3000)
   try {
-    const response = await axios.post(' http://3.109.208.126:8081/Contact/submitforms', formData);
+    const response = await axios.post(' http://13.201.85.29:8081/Contact/submitforms', formData);
     console.log('Response:', response.data); // Handle the response from the server
     // You can add further actions here, like clearing the form or showing a success message
   } catch (error) {
@@ -1225,12 +1225,12 @@ const settings = {
   useEffect(() => {
     const fetchSliderData = async () => {
       try {
-        const response = await fetch(" http://3.109.208.126:8081/api/images/images"); // Replace with your API endpoint
+        const response = await fetch(" http://13.201.85.29:8081/api/images/images"); // Replace with your API endpoint
         const data = await response.json();
     
         const formattedData = data.map((item) => ({
           id: item._id,
-          imageUrl: ` http://3.109.208.126:8081${item.imagePath}`, // Correctly prepending the server URL
+          imageUrl: ` http://13.201.85.29:8081${item.imagePath}`, // Correctly prepending the server URL
           title: item.title,
           description: item.description,
         }));
@@ -1943,7 +1943,7 @@ const settings = {
             <div className="blog-item">
               <div className="blog-img">
               <img
-                    src={` http://3.109.208.126:8081${blog.imagePath}`} // Ensure to add backend URL
+                    src={` http://13.201.85.29:8081${blog.imagePath}`} // Ensure to add backend URL
                     className="img-fluid rounded-top w-100"
                     alt={blog.title}
                   />

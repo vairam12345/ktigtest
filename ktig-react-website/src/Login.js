@@ -154,8 +154,8 @@
 //       // Post API call based on form type
 //       const apiUrl =
 //         formType === "form1"
-//           ? " http://3.109.208.126:8081/api/images/upload"
-//           : " http://3.109.208.126:8081/api/blogimages/upload";
+//           ? " http://13.201.85.29:8081/api/images/upload"
+//           : " http://13.201.85.29:8081/api/blogimages/upload";
 
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -353,7 +353,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={` http://3.109.208.126:8081${form1Events[currentIndex1].image}`} 
+//                 src={` http://13.201.85.29:8081${form1Events[currentIndex1].image}`} 
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //              <h3 style={{ color: "white", marginTop: "10px" }}>
@@ -410,7 +410,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={` http://3.109.208.126:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
+//                 src={` http://13.201.85.29:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white", marginTop: "10px" }}>
@@ -489,8 +489,8 @@
 //       // Post API call based on form type
 //       const apiUrl =
 //         formType === "form1"
-//           ? " http://3.109.208.126:8081/api/images/upload"
-//           : " http://3.109.208.126:8081/api/blogimages/upload";
+//           ? " http://13.201.85.29:8081/api/images/upload"
+//           : " http://13.201.85.29:8081/api/blogimages/upload";
 
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -742,7 +742,7 @@
 //               Prev
 //             </button>
 //             <img
-//               src={` http://3.109.208.126:8081${form1Events[currentIndex1].image}`}
+//               src={` http://13.201.85.29:8081${form1Events[currentIndex1].image}`}
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white" }}>
@@ -811,7 +811,7 @@
 //               Prev
 //             </button>
 //             <img
-//               src={` http://3.109.208.126:8081${form2Events[currentIndex2].image}`}
+//               src={` http://13.201.85.29:8081${form2Events[currentIndex2].image}`}
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white" }}>
@@ -903,8 +903,8 @@ const EventForm = ({ onSubmit, formType }) => {
 
       const apiUrl =
         formType === "form1"
-          ? " http://3.109.208.126:8081/api/images/upload"
-          : " http://3.109.208.126:8081/api/blogimages/upload";
+          ? " http://13.201.85.29:8081/api/images/upload"
+          : " http://13.201.85.29:8081/api/blogimages/upload";
 
       axios
         .post(apiUrl, formDataToSend)
@@ -1024,10 +1024,10 @@ const handlePrevSlide = (totalSlides) => {
 
   useEffect(() => {
     // Fetch events from the backend
-    axios.get("  http://3.109.208.126:8081/api/images/images").then((response) => {
+    axios.get("  http://13.201.85.29:8081/api/images/images").then((response) => {
       setForm1Events(response.data);
     });
-    axios.get(" http://3.109.208.126:8081/api/blogimages/images").then((response) => {
+    axios.get(" http://13.201.85.29:8081/api/blogimages/images").then((response) => {
       
       setForm2Events(response.data);
     });
@@ -1044,8 +1044,8 @@ const handlePrevSlide = (totalSlides) => {
   const handleDelete = (formType, id) => {
     const apiUrl =
       formType === "form1"  
-        ? ` http://3.109.208.126:8081/api/images/images/${id}`
-        : ` http://3.109.208.126:8081/api/blogimages/images/${id}`;
+        ? ` http://13.201.85.29:8081/api/images/images/${id}`
+        : ` http://13.201.85.29:8081/api/blogimages/images/${id}`;
 
     axios
       .delete(apiUrl)
@@ -1081,7 +1081,7 @@ const handlePrevSlide = (totalSlides) => {
     //         <div key={event._id}>
     //           {/* <img src={event.image} alt={event.title} /> */}
     //           <div key={event._id}>
-    //         <img src={` http://3.109.208.126:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
+    //         <img src={` http://13.201.85.29:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
     //       <p>{event.title}</p>
     //       <p>{event.description}</p>
     //       </div>
@@ -1100,7 +1100,7 @@ const handlePrevSlide = (totalSlides) => {
     //         <div key={event._id}>
     //          {/* <img src= {event.image} alt={event.title} />  */}
     //          <div key={event._id}>
-    //         <img src={` http://3.109.208.126:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
+    //         <img src={` http://13.201.85.29:8081${event.imagePath}`}   style={{ width: "30%", height: "auto", borderRadius: "8px" }} />
     //       <p>{event.title}</p>
     //       <p>{event.description}</p>
     //       </div>
@@ -1135,7 +1135,7 @@ const handlePrevSlide = (totalSlides) => {
         form1Events.map((event) => (
           <div key={event._id} className="card">
             <img 
-              src={` http://3.109.208.126:8081${event.imagePath}`} 
+              src={` http://13.201.85.29:8081${event.imagePath}`} 
               alt={event.title} 
               className="card-image"
             />
@@ -1162,7 +1162,7 @@ const handlePrevSlide = (totalSlides) => {
         form2Events.map((event) => (
           <div key={event._id} className="card">
             <img 
-              src={` http://3.109.208.126:8081${event.imagePath}`} 
+              src={` http://13.201.85.29:8081${event.imagePath}`} 
               alt={event.title} 
               className="card-image"
             />

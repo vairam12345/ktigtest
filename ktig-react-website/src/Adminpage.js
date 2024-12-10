@@ -346,7 +346,7 @@
 
 //       // POST API call for image upload
 //       axios
-//         .post(" http://3.109.208.126:8081/api/images/upload", formDataToSend)
+//         .post(" http://13.201.85.29:8081/api/images/upload", formDataToSend)
 //         .then((response) => {
 //           onSubmit(formType, {
 //             image: response.data.imageUrl,  // assuming response contains image URL
@@ -447,7 +447,7 @@
 //   // Fetch events data (GET API)
 //   useEffect(() => {
 //     axios
-//       .get(" http://3.109.208.126:8081/api/images/images")
+//       .get(" http://13.201.85.29:8081/api/images/images")
 //       .then((response) => {
 //         const events = response.data; // assuming data contains event list
 //         setForm1Events(events.filter(event => event.type === 'form1'));
@@ -671,8 +671,8 @@
 
 //       // Post API call based on form type
 //       const apiUrl = formType === "form1" 
-//         ? " http://3.109.208.126:8081/api/images/upload"
-//         : " http://3.109.208.126:8081/api/blogimages/upload";
+//         ? " http://13.201.85.29:8081/api/images/upload"
+//         : " http://13.201.85.29:8081/api/blogimages/upload";
       
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -776,7 +776,7 @@
 //   // Fetch events data for both forms (GET API)
 //   useEffect(() => {
 //     axios
-//       .get(" http://3.109.208.126:8081/api/images/images")
+//       .get(" http://13.201.85.29:8081/api/images/images")
 //       .then((response) => {
 //         const events = response.data; // assuming data contains event list
 //         setForm1Events(events.filter(event => event.type === 'form1'));
@@ -786,7 +786,7 @@
 //       });
 
 //     axios
-//       .get(" http://3.109.208.126:8081/api/blogimages/images")
+//       .get(" http://13.201.85.29:8081/api/blogimages/images")
 //       .then((response) => {
 //         const events = response.data; // assuming data contains event list
 //         setForm2Events(events.filter(event => event.type === 'form2'));
@@ -878,7 +878,7 @@
 //             <div style={{ textAlign: "center" }}>
 //               <img
 //                 // src={form1Events[currentIndex1].image}
-//                 src={` http://3.109.208.126:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
+//                 src={` http://13.201.85.29:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
 
 //                 alt={form1Events[currentIndex1].title}
 //                 style={{
@@ -939,7 +939,7 @@
 //             <div style={{ textAlign: "center" }}>
 //               <img
 //                 // src={form2Events[currentIndex2].image}
-//                 src={` http://3.109.208.126:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
+//                 src={` http://13.201.85.29:8081${form1Events[currentIndex1].image}`} // Adjust to full URL
 
 //                 alt={form2Events[currentIndex2].title}
 //                 style={{
@@ -1020,8 +1020,8 @@
 //       // Post API call based on form type
 //       const apiUrl =
 //         formType === "form1"
-//           ? " http://3.109.208.126:8081/api/images/upload"
-//           : " http://3.109.208.126:8081/api/blogimages/upload";
+//           ? " http://13.201.85.29:8081/api/images/upload"
+//           : " http://13.201.85.29:8081/api/blogimages/upload";
 
 //       axios
 //         .post(apiUrl, formDataToSend)
@@ -1219,7 +1219,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={` http://3.109.208.126:8081${form1Events[currentIndex1].image}`} 
+//                 src={` http://13.201.85.29:8081${form1Events[currentIndex1].image}`} 
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //              <h3 style={{ color: "white", marginTop: "10px" }}>
@@ -1276,7 +1276,7 @@
 //               Prev
 //             </button>
 //             <img
-//                 src={` http://3.109.208.126:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
+//                 src={` http://13.201.85.29:8081${form2Events[currentIndex2].image}`} // Adjust to full URL
 //               style={{ width: "60%", height: "auto", borderRadius: "8px" }}
 //             />
 //             <h3 style={{ color: "white", marginTop: "10px" }}>
