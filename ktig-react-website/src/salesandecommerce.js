@@ -25,22 +25,12 @@ function saleEcommerce (){
                 <div className="ktig-container" style={{ textAlign: 'center' }}>
                           <h1 className="text-primary">
                               <img
-                                src="assets/img/logo/ktignewremove.png"
+                                src="assets/img/logo/Newlogo.png"
                                  alt="KTIG"
-                                 style={{ maxHeight: '124px' }}
+                                 style={{ maxHeight: '100px' }}
                                     />
                                    </h1>
-                                   <p
-                                    className="custom-white-text"
-                                    style={{
-                                     marginTop: '-47px',
-                                     fontSize: '12px',
-                                     marginLeft: '166px',
-                                     color: 'white',
-                                     fontFamily: "'Great Vibes', cursive", // Apply the cursive font
-                                       }}
-                                        >
-                                      Rising Beyond Limits... </p>
+                                    
                                               </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

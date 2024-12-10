@@ -99,22 +99,12 @@ const [formData, setFormData] = useState({
                      <div className="ktig-container" style={{ textAlign: 'center' }}>
                           <h1 className="text-primary">
                               <img
-                                src="assets/img/logo/ktignewremove.png"
+                                src="assets/img/logo/Newlogo.png"
                                  alt="KTIG"
-                                 style={{ maxHeight: '124px' }}
+                                 style={{ maxHeight: '100px' }}
                                     />
                                    </h1>
-                                   <p
-                                    className="custom-white-text"
-                                    style={{
-                                     marginTop: '-47px',
-                                     fontSize: '12px',
-                                     marginLeft: '166px',
-                                     color: 'white',
-                                     fontFamily: "'Great Vibes', cursive", // Apply the cursive font
-                                       }}
-                                        >
-                                      Rising Beyond Limits... </p>
+                                    
                                               </div>
 
                 </a>
@@ -127,7 +117,7 @@ const [formData, setFormData] = useState({
                         <a href="Aboutpage" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
                             <a href="ktig_services" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                            <div class="dropdown-menu m-0">
+                            <div className="dropdown-menu m-0 custom-dropdown-background">
                             <a href="ktig_services" className="dropdown-item">KTIG Groups</a>    
                             <a href="Bankingsolution" className="dropdown-item">Bankingsolution</a> 
                             <a href="Financesolution" className="dropdown-item">Finance Solution</a>   
@@ -135,8 +125,8 @@ const [formData, setFormData] = useState({
                             <a href="Nonitsolution" className="dropdown-item">Non-IT Solution</a>   
                             <a href="SaleEcommerce" className="dropdown-item">Sales & E-commerce</a>  
                             <a href="Training&coaching" className="dropdown-item">Training & Coaching</a>
-                            <a href="Marketing" className="dropdown-item">Marketing</a>  
-                            </div>
+                            <a href="Marketing" className="dropdown-item">Marketing</a>   
+                        </div>
                         </div>
                         <a href="Achievement" class="nav-item nav-link">Achievement</a>
                         {/* <a href="" class="nav-item nav-link">Investment</a> */}
